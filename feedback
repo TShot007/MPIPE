@@ -1,0 +1,9 @@
+def provide_feedback(frame, analysis_results):
+    # Display real-time feedback on frame
+    cv2.putText(frame, 
+                f"Shoulder Turn: {analysis_results['shoulder_angle']}°",
+                (10, 30),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                1,
+                (0, 255, 0),
+                2)
