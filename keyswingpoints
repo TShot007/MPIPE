@@ -1,0 +1,9 @@
+def analyze_swing(pose_landmarks):
+    # Define key angles to analyze
+    angles = {
+        "shoulder_rotation": calculate_shoulder_angle(pose_landmarks),
+        "hip_rotation": calculate_hip_angle(pose_landmarks),
+        "knee_flex": calculate_knee_angle(pose_landmarks),
+        "arm_extension": calculate_arm_angle(pose_landmarks)
+    }
+    return analyze_angles(angles)
