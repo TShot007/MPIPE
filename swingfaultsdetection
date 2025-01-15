@@ -1,0 +1,12 @@
+def detect_swing_faults(angles):
+    faults = []
+    
+    # Check for common faults
+    if angles["shoulder_rotation"] < threshold:
+        faults.append("Limited shoulder turn")
+    if angles["hip_rotation"] > max_threshold:
+        faults.append("Over-rotation of hips")
+    if angles["knee_flex"] < min_threshold:
+        faults.append("Insufficient knee flex")
+        
+    return faults
