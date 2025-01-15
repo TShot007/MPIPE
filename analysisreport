@@ -1,0 +1,7 @@
+def generate_report(swing_data):
+    report = {
+        "key_metrics": analyze_metrics(swing_data),
+        "detected_faults": detect_swing_faults(swing_data),
+        "recommended_drills": select_drills(detected_faults)
+    }
+    return report
